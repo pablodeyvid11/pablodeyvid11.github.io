@@ -14,7 +14,7 @@ body {
 }
 
 .full-screen {
-  padding: 8rem 0;
+  padding: 5rem 0;
 }
 
 .small-text {
@@ -62,7 +62,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   color: #212121;
   font-size: 2.8em;
-  margin: 24px 0;
+  margin: 0px 0;
 }
 
 h2 {
@@ -107,11 +107,15 @@ b, strong {
   position: relative;
 }
 
+.header-stacks { 
+  flex: none;
+  max-width: none;
+}
+
 .animated-info {
   display: inline-block;
   vertical-align: top;
   margin-top: 5px;
-  min-width: 260px;
   position: relative;
 }
 
@@ -515,10 +519,14 @@ b, strong {
   .navbar-expand-sm .navbar-nav .nav-link {
     padding: 3px 20px;
   }
+
+  .biography {
+    display: grid !important;
+  }
 }
 @media (max-width: 580px) {
 	.animated-info {
-		min-width: 200px;
+		min-width: 280px;
 	}
   .animated-item {
     font-size: 30px;
@@ -541,6 +549,9 @@ b, strong {
     display: block;
     margin: 10px 0 0 0;
   }
+  .biography {
+    display: grid !important;
+  }     
 }
 @media (max-width: 320px) {
   .animated-text {
@@ -566,5 +577,8 @@ b, strong {
   .social-links li {
     display: inline-block;
     vertical-align: top;
+  }
+  .biography {
+    display: grid !important;
   }
 }
