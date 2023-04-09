@@ -173,6 +173,10 @@ strong {
   border: 5px solid #ffc200;
 }
 
+.language-mobile {
+  display: none;
+}
+
 /*CARD*/
 .profile-card {
 
@@ -621,6 +625,10 @@ strong {
 }
 
 @media (max-width: 767px) {
+  .language-mobile {
+    display: inherit;
+  }
+
   h1 {
     font-size: 2.4em;
   }
@@ -649,6 +657,11 @@ strong {
 }
 
 @media (max-width: 580px) {
+
+  .language-mobile {
+    display: inherit;
+  }
+
   .animated-info {
     min-width: 280px;
   }
@@ -681,6 +694,11 @@ strong {
 }
 
 @media (max-width: 320px) {
+
+  .language-mobile {
+    display: inherit;
+  }
+
   .animated-text {
     margin-top: 0;
   }

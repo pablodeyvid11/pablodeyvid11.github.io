@@ -3,19 +3,36 @@
   "use strict";
 
   // COLOR MODE
-  $('.color-mode').click(function () {
+
+  $('.language-mobile').click(function () {
     if ($('.color-mode')[0].innerHTML.match("PT-BR")) {
       $('.color-mode')[0].innerHTML = `<i class="bi bi-globe" style="margin-right: 10%;"></i>Language: US-EN`;
+      $('.language-mobile')[0].innerHTML = `Language: US-EN`;
       // Mudar do português para inglês
       let objTranslated = translate("US-EN");
       setTextTranslate(objTranslated);
 
     } else {
       $('.color-mode')[0].innerHTML = `<i class="bi bi-globe" style="margin-right: 10%;"></i>Idioma: PT-BR`;
-      // Mudar do inglês para o português
+      $('.language-mobile')[0].innerHTML = `Idioma: PT-BR`;      // Mudar do inglês para o português
       let objTranslated = translate("PT-BR");
       setTextTranslate(objTranslated);
+    }
+  })
 
+  $('.color-mode').click(function () {
+    if ($('.color-mode')[0].innerHTML.match("PT-BR")) {
+      $('.color-mode')[0].innerHTML = `<i class="bi bi-globe" style="margin-right: 10%;"></i>Language: US-EN`;
+      $('.language-mobile')[0].innerHTML = `Language: US-EN`;
+      // Mudar do português para inglês
+      let objTranslated = translate("US-EN");
+      setTextTranslate(objTranslated);
+
+    } else {
+      $('.color-mode')[0].innerHTML = `<i class="bi bi-globe" style="margin-right: 10%;"></i>Idioma: PT-BR`;
+      $('.language-mobile')[0].innerHTML = `Idioma: PT-BR`;      // Mudar do inglês para o português
+      let objTranslated = translate("PT-BR");
+      setTextTranslate(objTranslated);
     }
   })
 
