@@ -4,7 +4,13 @@
 
     // COLOR MODE
     $('.color-mode').click(function(){
-        console.log("MUDANDO")
+      if($('.color-mode')[0].innerHTML.match("PT-BR")) {
+        $('.color-mode')[0].innerHTML = `<i class="bi bi-globe" style="margin-right: 10%;"></i>Language: US-EN`;
+        // Mudar do português para inglês
+      } else {
+        $('.color-mode')[0].innerHTML = `<i class="bi bi-globe" style="margin-right: 10%;"></i>Idioma: PT-BR`;
+        // Mudar do inglês para o português
+      }
     })
 
     // HEADER
