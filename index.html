@@ -16,6 +16,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
   <!-- MAIN STYLE -->
   <link rel="stylesheet" href="css/tooplate-style.css">
+
+  <link rel="icon" href="images/logo.png">
 </head>
 
 <body>
@@ -23,7 +25,7 @@
   <!-- MENU -->
   <nav class="navbar navbar-expand-sm navbar-light">
     <div class="container">
-      <a class="navbar-brand" href="#about"><i class='uil uil-user'></i> Pablo Paiva</a>
+      <a class="navbar-brand" href="#about">Pablo Paiva</a>
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,13 +37,13 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item">
-            <a href="#project" class="nav-link"><span data-hover="Projetos">Projetos</span></a>
+            <a id="navbar-projects" href="#project" class="nav-link"><span data-hover="Projetos">Projetos</span></a>
           </li>
           <li class="nav-item">
-            <a href="#resume" class="nav-link"><span data-hover="Experiências">Experiências</span></a>
+            <a id="navbar-experiences" href="#resume" class="nav-link"><span data-hover="Experiências">Experiências</span></a>
           </li>
           <li class="nav-item">
-            <a href="#contact" class="nav-link"><span data-hover="Contato">Contato</span></a>
+            <a id="navbar-contact" href="#contact" class="nav-link"><span data-hover="Contato">Contato</span></a>
           </li>
           <li class="nav-item">
             <a href="./documents/curriculo.pdf" target="_blank" download="Pablo Paiva - Currículo"
@@ -68,13 +70,13 @@
 
         <div class="col-lg-7 col-md-12 col-12 d-flex align-items-center header-stacks">
           <div class="about-text">
-            <small class="small-text">Bem-vindos (as) ao <span class="mobile-block">meu portfólio!</span></small>
+            <small id="wellcome" class="small-text">Bem-vindos (as) ao <span class="mobile-block">meu portfólio!</span></small>
             <h1 class="animated animated-text">
-              <span class="mr-2">Opa galera, meu nome é Pablo Paiva e sou </span>
+              <span id="presentation" class="mr-2">Opa galera, meu nome é Pablo Paiva e sou </span>
               <div class="animated-info" style="width: 100% !important;">
-                <span class="animated-item">Desenvolvedor Backend</span>
-                <span class="animated-item">Desenvolvedor Java Pleno</span>
-                <span class="animated-item">Analista de Redes</span>
+                <span id="skils1" class="animated-item">Desenvolvedor Backend</span>
+                <span id="skils2" class="animated-item">Desenvolvedor Java</span>
+                <span id="skils3" class="animated-item">Profissional DevOps</span>
               </div>
             </h1>
           </div>
@@ -87,13 +89,14 @@
             <img src="./images/1639739418246.jfif" alt="" class="img-thumbnail mb-4">
           </div>
           <div class="pl-md-4 col-md-9">
-            <h6 class="title">Pablo Paiva, 20 anos</h6>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, pariatur, aperiam aut autem voluptas
-              odit. Odio ducimus delectus totam sed aliquam sequi praesentium mollitia, illum repudiandae quidem quod,
-              magni magnam.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, eius, nam. Quo praesentium qui temporibus
-              voluptatum, facilis aliquid eligendi fugiat beatae neque inventore non. Laborum repellendus consequatur
-              ullam voluptatum asperiores.</p>
+            <h6 id="name_age" class="title">Pablo Paiva, 20 anos</h6>
+            <p id="about-p1">Iniciei minha jornada no mundo na tecnologia bem jovem, com 15 anos, quando entrei no ensino médio
+              integrado à informática no IFRN. Tive diversas experiências e me apaixonei por programar e por solucionar
+              problemas com a ajuda da tecnologia.</p>
+            <p id="about-p2">Hoje, formado pelo IFRN e com uma ótima base em desenvolvimento, continuei meus passos e estou no
+              bacharelado em Tecnologia da Informação no Instituto Metropole Digital. Trabalho atualmente para a Lenovo
+              e faço parte de um time de desenvolvimento bastante completo, sempre me desafiando e aprendendo mais e
+              mais todos os dias.</p>
           </div>
         </div>
         <div class="tecnologies">
@@ -117,15 +120,15 @@
         <div class="col-lg-11 text-center mx-auto col-12">
 
           <div class="col-lg-8 mx-auto">
-            <h2>Projetos que desenvolvi/participei</h2>
+            <h2 id="projects-title">Projetos que desenvolvi/participei</h2>
           </div>
 
           <div class="owl-carousel owl-theme">
             <div class="item">
               <div class="project-info">
                 <img src="images/project/project-image01.png" class="img-fluid" alt="project image">
-                <h3>WhoAuthor</h3>
-                <p style="margin-bottom: 5%;">O WhoAuthor foi um projeto desenvolvido no IFRN ao longo dos anos de 2019
+                <h3 class="title-project1">WhoAuthor</h3>
+                <p class="text-project1" style="margin-bottom: 5%;">O WhoAuthor foi um projeto desenvolvido no IFRN ao longo dos anos de 2019
                   e 2021.
                   O projeto tem como objetivo o desenvolvimento de uma inteligência computacional capaz de reconhecer
                   padrões de escrita de um determinado texto literário e apontar o seu autor.
@@ -139,25 +142,21 @@
             <div class="item">
               <div class="project-info">
                 <img src="images/project/project-image02.png" class="img-fluid" alt="project image">
-                <h3>Registro de patente do WhoAuthor</h3>
-                <p style="margin-bottom: 5%;">O WhoAutor (slide anterior) possui duas versões, ambas com patente
+                <h3 class="title-project2">Registro de patente do WhoAuthor</h3>
+                <p class="text-project2" style="margin-bottom: 5%;">O WhoAutor (slide anterior) possui duas versões, ambas com patente
                   publicada no Instituto Nacional de Propriedade Industrial (INPI). A primeira é um software desktop
-                  feito inteiramente em Java, que foi patenteada em 26/01/2021, com número de registro <a
-                    href="https://busca.inpi.gov.br/pePI/servlet/ProgramaServletController?Action=detail&CodPedido=31197&SearchParameter=12330627432"
-                    target="_blank" rel="BR 51 2021 000120 6">BR 51 2021 000120 6</a>. A segunda
+                  feito inteiramente em Java, que foi patenteada em 26/01/2021, com número de registro BR 51 2021 000120 6. A segunda
                   versão possui um backend em Java com o ecossistema do Spring, além de um fronted desenvolvido em
                   TypeScript com o apoio do React.ts e foi patenteada no dia 15/02/2022, seu número de
-                  registro é <a
-                    href="https://busca.inpi.gov.br/pePI/servlet/ProgramaServletController?Action=detail&CodPedido=34654&SearchParameter=12330627432"
-                    target="_blank" rel="BR 51 2022 000320 1">BR 51 2022 000320 1</a>.</p>
+                  registro é BR 51 2022 000320 1.</p>
               </div>
             </div>
 
             <div class="item">
               <div class="project-info">
                 <img src="images/project/project-image03.png" class="img-fluid" alt="project image">
-                <h3>Robótica</h3>
-                <p style="margin-bottom: 5%;">Ao longo da minha formação no IFRN, participei de vários projetos
+                <h3 class="title-project3">Robótica</h3>
+                <p class="text-project3" style="margin-bottom: 5%;">Ao longo da minha formação no IFRN, participei de vários projetos
                   envolvendo robótica. Trabalhei com arduíno durante dois anos (2019-2020), entrei em contato com a
                   linguagem
                   de programação do microcontrolador, tive diversas aulas de eletrônica durante esse período, além de
@@ -171,8 +170,8 @@
             <div class="item">
               <div class="project-info">
                 <img src="images/project/project-image04.png" class="img-fluid" alt="project image">
-                <h3>SIEMENS LDA BR</h3>
-                <p style="margin-bottom: 5%;">Na primeira semana a partir do meu ingresso no bacharelado em Tecnologia
+                <h3 class="title-project4">SIEMENS LDA BR</h3>
+                <p class="text-project4" style="margin-bottom: 5%;">Na primeira semana a partir do meu ingresso no bacharelado em Tecnologia
                   da Informação no IMD/UFRN eu já participava de um projeto de desenvolvimento. O IMD fechou parceria
                   com a SIEMENS LDA BR, representante nacional da empresa alemã SIEMENS AG. Minha tarefa era criar um
                   ambiente integrado para a equipe de vendas da empresa, um sistema completo, capaz de registrar todas
@@ -185,8 +184,8 @@
             <div class="item">
               <div class="project-info">
                 <img src="images/project/project-image05.png" class="img-fluid" alt="project image">
-                <h3>LENOVO 5G</h3>
-                <p style="margin-bottom: 5%;">Em dezembro de 2022 ingressei no projeto que faço parte até hoje.
+                <h3 class="title-project5">LENOVO 5G</h3>
+                <p class="text-project5" style="margin-bottom: 5%;">Em dezembro de 2022 ingressei no projeto que faço parte até hoje.
                   O IMD/UFRN possui uma grande parceria com a Lenovo Global, com o objetivo de criar um polo de pesquisa
                   em telecomunicações aqui na UFRN.
                   Participo do projeto intitulado Intelligent Network Management System for 5G (iNMS 5G). O projeto visa
@@ -210,10 +209,10 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto" style="text-align: center;">
-          <h2>Experiências</h2>
+          <h2 id="experiences-title">Experiências</h2>
         </div>
         <div class="col-lg-6 col-12">
-          <h3 class="mb-4" style="text-align: center;">Profissionais</h3>
+          <h3 id="experiences-professional" class="mb-4" style="text-align: center;">Profissionais</h3>
 
           <div class="timeline">
             <div class="timeline-wrapper">
@@ -221,8 +220,8 @@
                 <span>2021</span>
               </div>
               <div class="timeline-info">
-                <h3><span>Desenvolvedor Frontend</span><small>Pechinchou</small></h3>
-                <p>Projeto do Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte em parceria com
+                <h3><span id="title-professional1">Desenvolvedor Frontend</span><small>Pechinchou</small></h3>
+                <p id="text-professional1">Projeto do Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte em parceria com
                   a Pechinchou, onde fui membro da equipe de desenvolvimento que produziu um Frontend utilizando
                   React.ts e um aplicativo com React Native.</p>
               </div>
@@ -233,8 +232,8 @@
                 <span>2022</span>
               </div>
               <div class="timeline-info">
-                <h3><span>Desenvolvedor Fullstack</span><small>SIEMENS LDA BR</small></h3>
-                <p>Projeto da Universidade Federal do Rio Grande do Norte, através do Instituto Metrópole Digital, em
+                <h3><span id="title-professional2">Desenvolvedor Fullstack</span><small>SIEMENS LDA BR</small></h3>
+                <p id="text-professional2">Projeto da Universidade Federal do Rio Grande do Norte, através do Instituto Metrópole Digital, em
                   parceria com a SIEMENS Aktiengesellschaft - Brasil. Fiz parte do time de desenvolvimento Fullstack,
                   onde no Backend era utilizado Java com o ecossistema Spring, e no Frontend o Thymeleaf.</p>
               </div>
@@ -245,8 +244,8 @@
                 <span>2023</span>
               </div>
               <div class="timeline-info">
-                <h3><span>Desenvolvedor Backend/DevOps</span><small>Lenovo Brasil</small></h3>
-                <p>Projeto da Universidade Federal do Rio Grande do Norte, através do Instituto Metrópole Digital, em
+                <h3><span id="title-professional3">Desenvolvedor Backend/DevOps</span><small>Lenovo Brasil</small></h3>
+                <p id="text-professional3">Projeto da Universidade Federal do Rio Grande do Norte, através do Instituto Metrópole Digital, em
                   parceria com a Lenovo. Faço parte do time de desenvolvimento da Lenovo aqui no Brasil, onde
                   pesquisamos e desenvolvemos soluções no âmbito do 5G, tanto nacional quanto internacionalmente.
                   Utilizo Java com Dropwizard e Kubernetes no desenvolvimento.</p>
@@ -256,7 +255,7 @@
         </div>
 
         <div class="col-lg-6 col-12">
-          <h3 class="mb-4 mobile-mt-2" style="text-align: center;">Acadêmicas</h3>
+          <h3 id="experiences-academic" class="mb-4 mobile-mt-2" style="text-align: center;">Acadêmicas</h3>
 
           <div class="timeline">
             <div class="timeline-wrapper">
@@ -264,8 +263,8 @@
                 <span>2018</span>
               </div>
               <div class="timeline-info">
-                <h3><span>Técnico em informática</span><small>IFRN</small></h3>
-                <p>Sou técnico em informática pelo Instituto Federal do Rio Grande do Norte (IFRN). Iniciei o ensino
+                <h3><span id="title-academic1">Técnico em informática</span><small>IFRN</small></h3>
+                <p id="text-academic1">Sou técnico em informática pelo Instituto Federal do Rio Grande do Norte (IFRN). Iniciei o ensino
                   médio técnico no ano de 2018 e finalizei em 2021. Tive um contato imersivo em lógica de programação e
                   foi no IFRN que comecei meus estudos em tecnologia.
                 </p>
@@ -277,8 +276,8 @@
                 <span>2022</span>
               </div>
               <div class="timeline-info">
-                <h3><span>Bacharelado em Tecnologia da Informação</span><small>UFRN</small></h3>
-                <p>Ingressei no meu ensino superior na Universidade Federal do Rio Grande do Norte, no Bacharelado em
+                <h3><span id="title-academic2">Bacharelado em Tecnologia da Informação</span><small>UFRN</small></h3>
+                <p id="text-academic2">Ingressei no meu ensino superior na Universidade Federal do Rio Grande do Norte, no Bacharelado em
                   Tecnologia da Informação, em 2022. Estou em um contínuo processo de aprendizagem e adquirindo
                   experiências únicas.</p>
               </div>
@@ -304,7 +303,7 @@
 
           <div class="contact-info d-flex justify-content-between align-items-center py-4 px-lg-5">
             <div class="contact-info-item">
-              <h3 class="mb-3 text-white">Diga olá!</h3>
+              <h3 id="contact-maptitle" class="mb-3 text-white">Diga olá!</h3>
               <p class="footer-text mb-0">+55 84 99689-6116</p>
               <p><a href="mailto:pablo.paiva.123@ufrn.edu.br">pablo.paiva.123@ufrn.edu.br</a></p>
             </div>
@@ -324,13 +323,13 @@
 
         <div class="col-lg-6 col-12">
           <div class="contact-form">
-            <h2 class="mb-4" style="text-align: center;">Se interessou em trabalhar comigo? Vamos conversar!</h2>
+            <h2 id="contact-titleinter" class="mb-4" style="text-align: center;">Se interessou em trabalhar comigo? Vamos conversar!</h2>
             <div class="profile-card">
               <img src="./images/1639739418246.jfif" class="profilepic-card" alt="Profile Card with HTML & CSS" />
               <h3>Pablo Paiva</h3>
-              <p style="margin: 5%;">Entre com contato comigo através do Linkedin ou das redes sociais informadas aqui
+              <p id="contact-descriptionlinkedin" style="margin: 5%;">Entre com contato comigo através do Linkedin ou das redes sociais informadas aqui
                 do lado!</p>
-              <a href="https://www.linkedin.com/in/pablinho" target="_blank"><i class="bi bi-linkedin"></i> Conectar</a>
+              <a href="https://www.linkedin.com/in/pablinho" target="_blank" id="contact-conect"><i class="bi bi-linkedin"></i> Conectar</a>
               <p style="color: white;">_</p>
             </div>
 
