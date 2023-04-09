@@ -142,6 +142,43 @@ b, strong {
   animation-delay: 4s;
 }
 
+
+/*CARD*/
+.profile-card {
+  
+  padding-top: 2%;
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: center;
+  background: #dddddd85;
+  border-radius: 20px;
+
+}
+.profilepic-card {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  transition: 0.2s;
+}
+.profilepic-card:hover {
+  border: 5px solid #007bff;
+}
+
+.profile-card a {
+  padding: 2%;
+  border-radius: 10%;
+  font-style: normal;
+  font-size: 130%;
+  color: white;
+  background: #007bff;
+}
+
+.profile-card a:hover{
+  color: white !important;
+}
+
+/**/
 @keyframes BottomTotop {
   0% {
     opacity: 0;
