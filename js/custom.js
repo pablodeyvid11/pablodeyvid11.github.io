@@ -20,21 +20,28 @@
     }
   })
 
+
   $('.color-mode').click(function () {
     if ($('.color-mode')[0].innerHTML.match("PT-BR")) {
-      $('.color-mode')[0].innerHTML = `<i class="bi bi-globe" style="margin-right: 10%;"></i>Language: US-EN`;
+      $('.color-mode')[0].innerHTML = `<img src="./images/flags/us.svg" style="margin-right: 2%;width: 25px;">Language: US-EN`;
       $('.language-mobile')[0].innerHTML = `Language: US-EN`;
       // Mudar do português para inglês
       let objTranslated = translate("US-EN");
       setTextTranslate(objTranslated);
 
+    } else if ($('.color-mode')[0].innerHTML.match("US-EN")) {
+      $('.color-mode')[0].innerHTML = `<img src="./images/flags/de.svg" style="margin-right: 2%;width: 25px;">Sprache: DE-DE`;
+      $('.language-mobile')[0].innerHTML = `Sprache: DE-DE`;      // Mudar do inglês para o alemão
+      let objTranslated = translate("DE-DE");
+      setTextTranslate(objTranslated);
     } else {
-      $('.color-mode')[0].innerHTML = `<i class="bi bi-globe" style="margin-right: 10%;"></i>Idioma: PT-BR`;
-      $('.language-mobile')[0].innerHTML = `Idioma: PT-BR`;      // Mudar do inglês para o português
+      $('.color-mode')[0].innerHTML = `<img src="./images/flags/br.svg" style="margin-right: 2%;width: 25px;">Idioma: PT-BR`;
+      $('.language-mobile')[0].innerHTML = `Idioma: PT-BR`;      // Mudar do alemão para o português
       let objTranslated = translate("PT-BR");
       setTextTranslate(objTranslated);
     }
   })
+
 
   // HEADER
   $(".navbar").headroom();
@@ -300,6 +307,84 @@ function translate(language) {
         titleInter: "Interested in working with me? Let's talk!",
         descriptionLinkedin: "Get in touch with me through Linkedin or the social networks informed here!",
         connect: `<i class="bi bi-linkedin"></i> Connect`
+      }
+    };
+  }
+
+
+  if (language == "DE-DE") {
+    return {
+      nav: {
+        project: "Projekte",
+        experiences: "Erlebnisse",
+        contact: "Kontakt"
+      },
+      about: {
+        welcome: "Willkommen in meinem Portfolio!",
+        presentation: "Hey Leute, mein Name ist Pablo Paiva und ich bin",
+        skils: ["Backend-Entwickler", "Java Entwickler", "Professionelle DevOps"],
+        name_age: "Pablo Paiva, 20 Jahre alt",
+        p1: "Meine Reise in die Welt der Technik begann schon sehr früh, im Alter von 15 Jahren, als ich am IFRN ein Gymnasium mit integriertem Informatikunterricht besuchte. Ich machte verschiedene Erfahrungen und verliebte mich in das Programmieren und das Lösen von Problemen mit Hilfe der Technik.",
+        p2: "Heute, nach meinem Abschluss am IFRN und mit einer großartigen Basis in der Entwicklung, habe ich meine Schritte fortgesetzt und bin im Bachelor of Information Technology am Instituto Metropole Digital. Ich arbeite derzeit für Lenovo und bin Teil eines sehr kompletten Entwicklungsteams, das mich immer wieder herausfordert und jeden Tag mehr und mehr lernt."
+      },
+      projects: {
+        title: "Projekte, die ich entwickelt habe/an denen ich beteiligt war",
+        list: [{
+          title: "WhoAuthor",
+          text: `WhoAuthor war ein Projekt, das in den Jahren 2019 und 2021 am IFRN entwickelt wurde. Das Projekt zielt darauf ab, eine Computerintelligenz zu entwickeln, die in der Lage ist, Schreibmuster eines bestimmten literarischen Textes zu erkennen und auf seinen Autor hinzuweisen. Auf Basis von Intelligenz wurde Prediction by Partial Machine (PPM-C) sowie die Programmiersprache Java verwendet. Der vollständige Projektbericht kann hier heruntergeladen werden: <a href="./documents/whoauthor.pdf" target="_blank" rel="WhoAuthor-Bericht">WhoAuthor-Bericht</a>.`
+        },
+        {
+          title: "WhoAuthor-Patentanmeldung",
+          text: `WhoAutor (vorherige Folie) hat zwei Versionen, beide mit einem Patent, das beim National Institute of Industrial Property (INPI) veröffentlicht wurde. Die erste ist eine vollständig in Java erstellte Desktop-Software, die am 26.01.2021 mit der Registrierungsnummer BR 51 2021 000120 6 patentiert wurde. Die zweite Version verfügt neben einem in entwickelten Frontend über ein Backend in Java mit dem Spring-Ökosystem TypeScript mit Unterstützung von React.ts und wurde am 15.02.2022 patentiert, seine Registrierungsnummer lautet BR 51 2022 000320 1.`
+        },
+        {
+          title: "Robotik",
+          text: `Während meiner Ausbildung am IFRN habe ich an mehreren Projekten mit Robotik teilgenommen. Ich habe zwei Jahre lang (2019-2020) mit Arduino gearbeitet, bin mit der Mikrocontroller-Programmiersprache in Kontakt gekommen, habe in dieser Zeit mehrere Elektronikkurse besucht und nebenbei meinen eigenen Roboter mit elektronischen Komponenten und dem Arduino selbst zusammengebaut. Ich habe auch als Zuhörer an der Brasilianischen Robotik-Olympiade 2019 und als Teilnehmer an der IFRN-Robotik-Olympiade in der Wissenschaftswoche 2019 (SECITEX) teilgenommen. Betreuung durch IMD/UFRN.`
+        },
+        {
+          title: "SIEMENS LDA BR",
+          text: `In der ersten Woche nach meinem Einstieg in den Bachelorstudiengang Information Technology am IMD/UFRN war ich bereits an einem Entwicklungsprojekt beteiligt. IMD ist eine Partnerschaft mit SIEMENS LDA BR, der nationalen Vertretung der deutschen Firma SIEMENS AG, eingegangen. Meine Aufgabe bestand darin, eine integrierte Umgebung für das Verkaufsteam des Unternehmens zu schaffen, ein vollständiges System, das alle Verkaufsangebote, Anfragen, den Auftragsfluss usw. aufzeichnen kann. Ich war als Fullstack-Programmierer im Entwicklungsteam tätig, wo Java mit Spring verwendet wurde Ökosystem und Thymeleaf für die grafische Oberfläche. Das Projekt startete im April 2022 und endete im November desselben Jahres.`
+        },
+        {
+          title: "LENOVO 5G",
+          text: `Im Dezember 2022 trat ich dem Projekt bei, dem ich bis heute angehöre. IMD/UFRN hat eine großartige Partnerschaft mit Lenovo Global, um hier bei UFRN ein Forschungszentrum für Telekommunikation zu schaffen. Ich nehme am Projekt mit dem Titel Intelligent Network Management System for 5G (iNMS 5G) teil. Das Projekt zielt auf die Erforschung und Entwicklung eines Slices-Managers im Rahmen des Netzes der 5. Generation, dem 5G. Ich arbeite als Backend-Entwickler mit Java und Dropwizard, zusätzlich zu verschiedenen DevOps-Aufgaben mit Containerisierungstools wie Docker, Podman und Kubernetes, Virtualisierung mit OpenStack und Open Source MANO, Überwachung mit Grafana und Prometheus und mit mehreren anderen Konzepten der Telekommunikation, Vernetzung und Entwicklung wie KPI, NFV/NFC etc.`
+        }
+        ]
+      },
+      experiences: {
+        title: "Erlebnisse",
+        titleProfessional: "Professionelle",
+        titleAcademic: "Akademische",
+        professional: [
+          {
+            title: "Frontend-Entwickler",
+            text: "Projekt des Bundesinstituts für Bildung, Wissenschaft und Technologie von Rio Grande do Norte in Partnerschaft mit Pechinchou, wo ich Mitglied des Entwicklungsteams war, das ein Frontend mit React.ts und eine Anwendung mit React Native erstellt hat."
+          },
+          {
+            title: "Fullstack-Entwickler",
+            text: "Projekt der Federal University of Rio Grande do Norte, durch das Metrópole Digital Institute, in Partnerschaft mit SIEMENS Aktiengesellschaft - Brasilien. Ich war Teil des Fullstack-Entwicklungsteams, wo das Backend Java mit dem Spring-Ökosystem und dem Frontend Thymeleaf verwendete."
+          },
+          {
+            title: "Backend/DevOps Entwickler",
+            text: "Projekt der Federal University of Rio Grande do Norte, durch das Metrópole Digital Institute, in Partnerschaft mit Lenovo. Ich bin Teil des Entwicklungsteams von Lenovo hier in Brasilien, wo wir national und international an 5G-Lösungen forschen und entwickeln. Ich verwende Java mit Dropwizard und Kubernetes in der Entwicklung."
+          }
+        ],
+        academic: [
+          {
+            title: "Computertechniker",
+            text: "Ich bin Computertechniker am Bundesinstitut Rio Grande do Norte (IFRN). Ich habe 2018 mit dem technischen Gymnasium begonnen und es 2021 abgeschlossen. Ich hatte einen intensiven Kontakt mit Programmierlogik und am IFRN begann ich mein Technologiestudium."
+          },
+          {
+            title: "Bachelor in Informationstechnologie",
+            text: "Ich habe 2022 meine Hochschulausbildung an der Bundesuniversität Rio Grande do Norte mit dem Bachelor of Information Technology begonnen. Ich befinde mich in einem kontinuierlichen Lernprozess und sammle einzigartige Erfahrungen."
+          }
+        ]
+      },
+      contact: {
+        mapTitle: "Sag Hallo!",
+        titleInter: "Interessiert an einer Zusammenarbeit mit mir? Lass uns reden!",
+        descriptionLinkedin: "Kontaktieren Sie mich über Linkedin oder die hier informierten sozialen Netzwerke!",
+        connect: `<i class="bi bi-linkedin"></i> Verbinden`
       }
     };
   }
