@@ -6,15 +6,18 @@
 
   $('.language-mobile').click(function () {
     if ($('.color-mode')[0].innerHTML.match("PT-BR")) {
-      $('.color-mode')[0].innerHTML = `<i class="bi bi-globe" style="margin-right: 10%;"></i>Language: US-EN`;
-      $('.language-mobile')[0].innerHTML = `Language: US-EN`;
-      // Mudar do português para inglês
+      $('.color-mode')[0].innerHTML = `<img src="./images/flags/us.svg" style="margin-right: 2%;width: 25px;">Language: US-EN`;
+      $('.language-mobile')[0].innerHTML = `Language: US-EN`; // Mudar do português para inglês
       let objTranslated = translate("US-EN");
       setTextTranslate(objTranslated);
-
+    } else if($('.color-mode')[0].innerHTML.match("US-EN")){
+      $('.color-mode')[0].innerHTML = `<img src="./images/flags/de.svg" style="margin-right: 2%;width: 25px;">Sprache: DE-DE`;
+      $('.language-mobile')[0].innerHTML = `Idioma: DE-DE`;      // Mudar do inglês para o alemão
+      let objTranslated = translate("DE-DE");
+      setTextTranslate(objTranslated);
     } else {
-      $('.color-mode')[0].innerHTML = `<i class="bi bi-globe" style="margin-right: 10%;"></i>Idioma: PT-BR`;
-      $('.language-mobile')[0].innerHTML = `Idioma: PT-BR`;      // Mudar do inglês para o português
+      $('.color-mode')[0].innerHTML = `<img src="./images/flags/br.svg" style="margin-right: 2%;width: 25px;">Idioma: PT-BR`;
+      $('.language-mobile')[0].innerHTML = `Language: PT-BR`; // Mudar do alemão para português
       let objTranslated = translate("PT-BR");
       setTextTranslate(objTranslated);
     }
