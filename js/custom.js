@@ -4,6 +4,7 @@
 
   // COLOR MODE
 
+  /* PT EN DE
   $('.language-mobile').click(function () {
     if ($('.color-mode')[0].innerHTML.match("PT-BR")) {
       $('.color-mode')[0].innerHTML = `<img src="./images/flags/us.svg" style="margin-right: 2%;width: 25px;">Language: US-EN`;
@@ -22,8 +23,25 @@
       setTextTranslate(objTranslated);
     }
   })
+  */
 
+  $('.language-mobile').click(function () {
+    if ($('.color-mode')[0].innerHTML.match("PT-BR")) {
+      $('.color-mode')[0].innerHTML = `<img src="./images/flags/us.svg" style="margin-right: 2%;width: 25px;">Language: US-EN`;
+      $('.language-mobile')[0].innerHTML = `Language: US-EN`; // Mudar do português para inglês
+      let objTranslated = translate("US-EN");
+      setTextTranslate(objTranslated);
+    } else if($('.color-mode')[0].innerHTML.match("US-EN")){
+      $('.color-mode')[0].innerHTML = `<img src="./images/flags/br.svg" style="margin-right: 2%;width: 25px;">Idioma: PT-BR`;
+      $('.language-mobile')[0].innerHTML = `Language: PT-BR`; // Mudar do inglês para português
+      let objTranslated = translate("PT-BR");
+      setTextTranslate(objTranslated);
+    } else {
 
+    }
+  })
+
+  /* PT EN DE
   $('.color-mode').click(function () {
     if ($('.color-mode')[0].innerHTML.match("PT-BR")) {
       $('.color-mode')[0].innerHTML = `<img src="./images/flags/us.svg" style="margin-right: 2%;width: 25px;">Language: US-EN`;
@@ -44,7 +62,24 @@
       setTextTranslate(objTranslated);
     }
   })
+  */
 
+  $('.color-mode').click(function () {
+    if ($('.color-mode')[0].innerHTML.match("PT-BR")) {
+      $('.color-mode')[0].innerHTML = `<img src="./images/flags/us.svg" style="margin-right: 2%;width: 25px;">Language: US-EN`;
+      $('.language-mobile')[0].innerHTML = `Language: US-EN`;
+      // Mudar do português para inglês
+      let objTranslated = translate("US-EN");
+      setTextTranslate(objTranslated);
+    } else if ($('.color-mode')[0].innerHTML.match("US-EN")) {
+      $('.color-mode')[0].innerHTML = `<img src="./images/flags/br.svg" style="margin-right: 2%;width: 25px;">Idioma: PT-BR`;
+      $('.language-mobile')[0].innerHTML = `Idioma: PT-BR`;      // Mudar do inglês para o português
+      let objTranslated = translate("PT-BR");
+      setTextTranslate(objTranslated);
+    } else {
+
+    }
+  })
 
   // HEADER
   $(".navbar").headroom();
@@ -191,12 +226,12 @@ function translate(language) {
           text: `Ao longo da minha formação no IFRN, participei de vários projetos envolvendo robótica. Trabalhei com arduíno durante dois anos (2019-2020), entrei em contato com a linguagem de programação do microcontrolador, tive diversas aulas de eletrônica durante esse período, além de montar meu próprio robô com componentes eletrônicos e o próprio arduíno. Participei também como ouvinte na Olimpíada Brasileira de Robótica de 2019 e participei como competidor na Olimpíada de Robótica do IFRN na Semana de Ciência (SECITEX) de 2019. Em 2022, fui monitor de robótica da semana de inverno na seleção do talento metrópole, programa de mentoria do IMD/UFRN.`
         },
         {
-          title: "SIEMENS LDA BR",
-          text: `Na primeira semana a partir do meu ingresso no bacharelado em Tecnologia da Informação no IMD/UFRN eu já participava de um projeto de desenvolvimento. O IMD fechou parceria com a SIEMENS LDA BR, representante nacional da empresa alemã SIEMENS AG. Minha tarefa era criar um ambiente integrado para a equipe de vendas da empresa, um sistema completo, capaz de registrar todas as propostas de venda, solicitações e fluxo de pedidos etc. Participei da equipe de desenvolvimento como programador Fullstack, onde era utilizado o Java com o ecossistema Spring e o Thymeleaf para a interface gráfica. O projeto teve início em abril de 2022 e finalizou em novembro do mesmo ano.`
+          title: "LabCoMU",
+          text: `Na primeira semana a partir do meu ingresso no bacharelado em Tecnologia da Informação no IMD/UFRN eu já participava de um projeto de desenvolvimento como membro do Laboratótio de Computação Móvel e Ubíqua (LabCoMU). O projeto era uma parceria entre o IMD e uma empresa internacional protegida por <a href="https://www.docusign.com/pt-br/blog/significado-de-nda-o-que-e-quem-assina-e-como-fazer" target="_blank" rel="noopener noreferrer">NDA</a>. Minha tarefa era criar um ambiente integrado para a equipe de vendas da empresa, um sistema completo, capaz de registrar todas as propostas de venda, solicitações e fluxo de pedidos etc. Participei da equipe de desenvolvimento como programador Fullstack, onde era utilizado o Java com o ecossistema Spring e o Thymeleaf para a interface gráfica. O projeto teve início em abril de 2022 e finalizou em novembro do mesmo ano.`
         },
         {
-          title: "LENOVO 5G",
-          text: `Em dezembro de 2022 ingressei no projeto que faço parte até hoje. O IMD/UFRN possui uma grande parceria com a Lenovo Global, com o objetivo de criar um polo de pesquisa em telecomunicações aqui na UFRN. Participo do projeto intitulado Intelligent Network Management System for 5G (iNMS 5G). O projeto visa a pesquisa e o desenvolvimento de um gerenciador de Slices no âmbito da rede de 5ª geração, o 5G. Trabalho como desenvolvedor Backend com Java e Dropwizard, além de realizar várias tarefas de DevOps com ferramentas de conteinerização com o Docker, Podman e Kubernetes, de virtualização com o OpenStack e Open Source MANO, de monitoramento com Grafana e Prometheus e com diversos outros conceitos de telecomunicações, redes e desenvolvimento, como KPI, NFV/NFC etc.`
+          title: "REGINA Lab",
+          text: `Em dezembro de 2022 ingressei no projeto que faço parte até hoje, como membro do REsearch Group on INternet services and Applications of the future (REGINA Lab). O IMD/UFRN possui uma grande parceria com uma multinacional protegida por <a href="https://www.docusign.com/pt-br/blog/significado-de-nda-o-que-e-quem-assina-e-como-fazer" target="_blank" rel="noopener noreferrer">NDA</a>. O projeto visa a pesquisa e o desenvolvimento de soluções no âmbito da rede de 5ª geração, o 5G. Trabalho como desenvolvedor Backend com Java e Dropwizard, além de realizar várias tarefas de DevOps com ferramentas de conteinerização com o Docker, Podman e Kubernetes, de virtualização com o OpenStack e Open Source MANO, de monitoramento com Grafana e Prometheus, de mensageria como RabbitMQ e com diversos outros conceitos de telecomunicações, redes e desenvolvimento, como KPI, NFV/NFC etc.`
         }
         ]
       },
@@ -211,11 +246,11 @@ function translate(language) {
           },
           {
             title: "Desenvolvedor Fullstack",
-            text: "Projeto da Universidade Federal do Rio Grande do Norte, através do Instituto Metrópole Digital, em parceria com a SIEMENS Aktiengesellschaft - Brasil. Fiz parte do time de desenvolvimento Fullstack, onde no Backend era utilizado Java com o ecossistema Spring, e no Frontend o Thymeleaf."
+            text: "Projeto da Universidade Federal do Rio Grande do Norte, através do Instituto Metrópole Digital e do Laboratório de Computação Móvel e Ubíqua (LabCoMU). Fiz parte do time de desenvolvimento Fullstack, onde no Backend era utilizado Java com o ecossistema Spring, e no Frontend o Thymeleaf."
           },
           {
             title: "Desenvolvedor Backend/DevOps",
-            text: "Projeto da Universidade Federal do Rio Grande do Norte, através do Instituto Metrópole Digital, em parceria com a Lenovo. Faço parte do time de desenvolvimento da Lenovo aqui no Brasil, onde pesquisamos e desenvolvemos soluções no âmbito do 5G, tanto nacional quanto internacionalmente. Utilizo Java com Dropwizard e Kubernetes no desenvolvimento."
+            text: "Projeto da Universidade Federal do Rio Grande do Norte, através do Instituto Metrópole Digital e do REsearch Group on INternet services and Applications of the future (REGINA Lab). Faço parte do time de desenvolvimento Backend/DevOps, onde pesquisamos e desenvolvemos soluções no âmbito do 5G, tanto nacional quanto internacionalmente. Utilizo Java com Dropwizard e Kubernetes no desenvolvimento."
           }
         ],
         academic: [
@@ -267,12 +302,12 @@ function translate(language) {
           text: `Throughout my training at IFRN, I participated in several projects involving robotics. I worked with arduino for two years (2019-2020), got in touch with the microcontroller programming language, took several electronics classes during this period, in addition to assembling my own robot with electronic components and the arduino itself. I also participated as a listener in the 2019 Brazilian Robotics Olympiad and participated as a competitor in the IFRN Robotics Olympiad in the 2019 Science Week (SECITEX). mentorship from IMD/UFRN.`
         },
         {
-          title: "SIEMENS LDA BR",
-          text: `In the first week after I entered the bachelor's degree in Information Technology at IMD/UFRN, I was already participating in a development project. IMD entered into a partnership with SIEMENS LDA BR, the national representative of the German company SIEMENS AG. My task was to create an integrated environment for the company's sales team, a complete system capable of recording all sales proposals, requests, and order flow, etc. I participated in the development team as a Fullstack programmer, where Java was used with the Spring ecosystem and Thymeleaf for the graphical interface. The project started in April 2022 and ended in November of the same year.`
+          title: "LabCoMU",
+          text: `In the first week after joining the Bachelor of Information Technology program at IMD/UFRN, I was already participating in a development project as a member of the Laboratory of Mobile and Ubiquitous Computing (LabCoMU). The project was a partnership between IMD and an international company protected by an <a href="https://www.docusign.com/pt-br/blog/significado-de-nda-o-que-e-quem-assina-e-como-fazer" target="_blank" rel="noopener noreferrer">NDA</a>. My task was to create an integrated environment for the company's sales team, a complete system capable of recording all sales proposals, requests, order flow, etc. I participated in the development team as a Fullstack programmer, using Java with the Spring ecosystem and Thymeleaf for the graphical interface. The project started in April 2022 and ended in November of the same year.`
         },
         {
-          title: "LENOVO 5G",
-          text: `In December 2022, I joined the project that I am part of until today. IMD/UFRN has a great partnership with Lenovo Global, to create a telecommunications research center here at UFRN. I participate in the project entitled Intelligent Network Management System for 5G (iNMS 5G). The project aims at the research and development of a Slices manager within the scope of the 5th generation network, the 5G. I work as a Backend developer with Java and Dropwizard, in addition to performing various DevOps tasks with containerization tools like Docker, Podman, and Kubernetes, virtualization with OpenStack and Open Source MANO, monitoring with Grafana and Prometheus and with several other concepts of telecommunications, networking and development such as KPI, NFV/NFC, etc.`
+          title: "REGINA Lab",
+          text: `In December 2022, I joined the project that I am still a part of today, as a member of the Research Group on Internet Services and Applications of the Future (REGINA Lab). The IMD/UFRN has a significant partnership with a multinational protected by <a href="https://www.docusign.com/pt-br/blog/significado-de-nda-o-que-e-quem-assina-e-como-fazer" target="_blank" rel="noopener noreferrer">NDA</a>. The project aims at researching and developing solutions within the scope of the 5th generation network, 5G. I work as a Backend developer with Java and Dropwizard, in addition to performing various DevOps tasks with containerization tools such as Docker, Podman, and Kubernetes, virtualization with OpenStack and Open Source MANO, monitoring with Grafana and Prometheus, messaging with RabbitMQ, and various other telecommunications, networking, and development concepts such as KPI, NFV/NFC, etc.`
         }
         ]
       },
@@ -287,11 +322,11 @@ function translate(language) {
           },
           {
             title: "Fullstack Developer",
-            text: "Project by the Federal University of Rio Grande do Norte, through the Metrópole Digital Institute, in partnership with SIEMENS Aktiengesellschaft - Brazil. I was part of the Fullstack development team, where the Backend used Java with the Spring ecosystem, and the Frontend Thymeleaf."
+            text: "Project of the Federal University of Rio Grande do Norte, through the Metropolis Digital Institute and the Laboratory of Mobile and Ubiquitous Computing (LabCoMU). I was part of the Fullstack development team, where Java with the Spring ecosystem was used on the Backend, and Thymeleaf on the Frontend."
           },
           {
             title: "Backend/DevOps Developer",
-            text: "Project by the Federal University of Rio Grande do Norte, through the Metrópole Digital Institute, in partnership with Lenovo. I'm part of Lenovo's development team here in Brazil, where we research and develop 5G solutions, both nationally and internationally. I use Java with Dropwizard and Kubernetes in development."
+            text: "Project of the Federal University of Rio Grande do Norte, through the Metropolis Digital Institute and the Research Group on Internet Services and Applications of the Future (REGINA Lab). I am part of the Backend/DevOps development team, where we research and develop solutions within the scope of 5G, both nationally and internationally. I use Java with Dropwizard and Kubernetes in development."
           }
         ],
         academic: [
