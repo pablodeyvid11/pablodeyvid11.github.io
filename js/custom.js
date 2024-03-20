@@ -209,7 +209,7 @@ function translate(language) {
         skils: ["Desenvolvedor Backend", "Desenvolvedor Java", "Profissional DevOps"],
         name_age: "Pablo Paiva, 20 anos",
         p1: "Iniciei minha jornada no mundo na tecnologia bem jovem, com 15 anos, quando entrei no ensino médio integrado à informática no IFRN. Tive diversas experiências e me apaixonei por programar e por solucionar problemas com a ajuda da tecnologia.",
-        p2: "Hoje, formado pelo IFRN e com uma ótima base em desenvolvimento, continuei meus passos e estou no bacharelado em Tecnologia da Informação no Instituto Metropole Digital. Trabalho atualmente para a Lenovo e faço parte de um time de desenvolvimento bastante completo, sempre me desafiando e aprendendo mais e mais todos os dias."
+        p2: "Hoje, formado pelo IFRN e com uma ótima base em desenvolvimento, continuei meus passos e estou no bacharelado em Tecnologia da Informação no Instituto Metropole Digital. Tenho interesse na área de engenharia de software, arquitetura de software, infraestrutura de software e em áreas relacionadas a DevOps."
       },
       projects: {
         title: "Projetos que desenvolvi/participei",
@@ -285,7 +285,7 @@ function translate(language) {
         skils: ["Backend Developer", "Java Developer", "Professional DevOps"],
         name_age: "Pablo Paiva, 20 years old",
         p1: "I started my journey in the world of technology at a very young age, at the age of 15, when I entered high school integrated with information technology at IFRN. I had different experiences and fell in love with programming and solving problems with the help of technology.",
-        p2: "Today, graduated from IFRN and with a great base in development, I continued in my steps and I am in the Bachelor of Information Technology at Instituto Metropole Digital. I currently work for Lenovo and am part of a very complete development team, always challenging myself and learning more and more every day."
+        p2: "Today, having graduated from IFRN with a strong foundation in development, I have continued my journey and am currently pursuing a Bachelor's degree in Information Technology at the Metropolis Digital Institute. I am particularly interested in the fields of software engineering, software architecture, software infrastructure, and areas related to DevOps."
       },
       projects: {
         title: "Projects I have developed/participated in",
