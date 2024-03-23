@@ -29,11 +29,15 @@
     if ($('.color-mode')[0].innerHTML.match("PT-BR")) {
       $('.color-mode')[0].innerHTML = `<img src="./images/flags/us.svg" style="margin-right: 2%;width: 25px;">Language: US-EN`;
       $('.language-mobile')[0].innerHTML = `Language: US-EN`; // Mudar do português para inglês
+      $('#curriculo-pdf-link')[0].href = `./documents/curriculo_enus.pdf`;
+
       let objTranslated = translate("US-EN");
       setTextTranslate(objTranslated);
     } else if($('.color-mode')[0].innerHTML.match("US-EN")){
       $('.color-mode')[0].innerHTML = `<img src="./images/flags/br.svg" style="margin-right: 2%;width: 25px;">Idioma: PT-BR`;
       $('.language-mobile')[0].innerHTML = `Language: PT-BR`; // Mudar do inglês para português
+      $('#curriculo-pdf-link')[0].href = `./documents/curriculo_ptbr.pdf`;
+
       let objTranslated = translate("PT-BR");
       setTextTranslate(objTranslated);
     } else {
@@ -68,6 +72,8 @@
     if ($('.color-mode')[0].innerHTML.match("PT-BR")) {
       $('.color-mode')[0].innerHTML = `<img src="./images/flags/us.svg" style="margin-right: 2%;width: 25px;">Language: US-EN`;
       $('.language-mobile')[0].innerHTML = `Language: US-EN`;
+      $('#curriculo-pdf-link')[0].href = `./documents/curriculo_enus.pdf`;
+
       // Mudar do português para inglês
       let objTranslated = translate("US-EN");
       setTextTranslate(objTranslated);
@@ -75,6 +81,8 @@
       $('.color-mode')[0].innerHTML = `<img src="./images/flags/br.svg" style="margin-right: 2%;width: 25px;">Idioma: PT-BR`;
       $('.language-mobile')[0].innerHTML = `Idioma: PT-BR`;      // Mudar do inglês para o português
       let objTranslated = translate("PT-BR");
+      $('#curriculo-pdf-link')[0].href = `./documents/curriculo_ptbr.pdf`;
+
       setTextTranslate(objTranslated);
     } else {
 
