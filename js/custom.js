@@ -214,7 +214,7 @@ function translate(language) {
       about: {
         welcome: "Bem-vindos (as) ao meu portfólio!",
         presentation: "Opa galera, meu nome é Pablo Paiva e sou",
-        skils: ["Desenvolvedor Backend", "Desenvolvedor Java", "Profissional DevOps"],
+        skils: ["Desenvolvedor Backend", "Pesquisador", "Profissional DevOps"],
         name_age: "Pablo Paiva, 20 anos",
         p1: "Iniciei minha jornada no mundo na tecnologia bem jovem, com 15 anos, quando entrei no ensino médio integrado à informática no IFRN. Tive diversas experiências e me apaixonei por programar e por solucionar problemas com a ajuda da tecnologia.",
         p2: "Hoje, formado pelo IFRN e com uma ótima base em desenvolvimento, continuei meus passos e estou no bacharelado em Tecnologia da Informação no Instituto Metropole Digital. Tenho interesse na área de engenharia de software, arquitetura de software, infraestrutura de software e em áreas relacionadas a DevOps."
@@ -235,11 +235,11 @@ function translate(language) {
         },
         {
           title: "LabCoMU",
-          text: `Na primeira semana a partir do meu ingresso no bacharelado em Tecnologia da Informação no IMD/UFRN eu já participava de um projeto de desenvolvimento como membro do Laboratótio de Computação Móvel e Ubíqua (LabCoMU). O projeto era uma parceria entre o IMD e uma empresa internacional protegida por <a href="https://www.docusign.com/pt-br/blog/significado-de-nda-o-que-e-quem-assina-e-como-fazer" target="_blank" rel="noopener noreferrer">NDA</a>. Minha tarefa era criar um ambiente integrado para a equipe de vendas da empresa, um sistema completo, capaz de registrar todas as propostas de venda, solicitações e fluxo de pedidos etc. Participei da equipe de desenvolvimento como programador Fullstack, onde era utilizado o Java com o ecossistema Spring e o Thymeleaf para a interface gráfica. O projeto teve início em abril de 2022 e finalizou em novembro do mesmo ano.`
+          text: `Na primeira semana a partir do meu ingresso no bacharelado em Tecnologia da Informação no IMD/UFRN eu já participava de um projeto de desenvolvimento como membro do Laboratótio de Computação Móvel e Ubíqua (LabCoMU). O projeto era uma parceria entre o IMD e a empresa internacional SIEMENS. Minha tarefa era criar um ambiente integrado para a equipe de vendas da empresa, um sistema completo, capaz de registrar todas as propostas de venda, solicitações e fluxo de pedidos etc. Participei da equipe de desenvolvimento como programador Fullstack, onde era utilizado o Java com o ecossistema Spring e o Thymeleaf para a interface gráfica. O projeto teve início em abril de 2022 e finalizou em novembro do mesmo ano.`
         },
         {
           title: "REGINA Lab",
-          text: `Em dezembro de 2022 ingressei no projeto que faço parte até hoje, como membro do REsearch Group on INternet services and Applications of the future (REGINA Lab). O IMD/UFRN possui uma grande parceria com uma multinacional protegida por <a href="https://www.docusign.com/pt-br/blog/significado-de-nda-o-que-e-quem-assina-e-como-fazer" target="_blank" rel="noopener noreferrer">NDA</a>. O projeto visa a pesquisa e o desenvolvimento de soluções no âmbito da rede de 5ª geração, o 5G. Trabalho como desenvolvedor Backend com Java e Dropwizard, além de realizar várias tarefas de DevOps com ferramentas de conteinerização com o Docker, Podman e Kubernetes, de virtualização com o OpenStack e Open Source MANO, de monitoramento com Grafana e Prometheus, de mensageria como RabbitMQ e com diversos outros conceitos de telecomunicações, redes e desenvolvimento, como KPI, NFV/NFC etc.`
+          text: `Em dezembro de 2022 ingressei no projeto que faço parte até hoje, como membro do REsearch Group on INternet services and Applications of the future (REGINA Lab). O IMD/UFRN possui uma grande parceria com a multinacional Lenovo. O projeto visa a pesquisa e o desenvolvimento de soluções no âmbito da rede de 5ª geração, o 5G. Trabalho como desenvolvedor Backend com Java e Dropwizard, além de realizar várias tarefas de DevOps com ferramentas de conteinerização com o Docker, Podman e Kubernetes, de virtualização com o OpenStack e Open Source MANO, de monitoramento com Grafana e Prometheus, de mensageria como RabbitMQ e com diversos outros conceitos de telecomunicações, redes e desenvolvimento, como KPI, NFV/NFC etc.`
         }
         ]
       },
@@ -290,7 +290,7 @@ function translate(language) {
       about: {
         welcome: "Welcome to my portfolio!",
         presentation: "Hey folks, my name is Pablo Paiva and I'm",
-        skils: ["Backend Developer", "Java Developer", "Professional DevOps"],
+        skils: ["Backend Developer", "Researcher", "Professional DevOps"],
         name_age: "Pablo Paiva, 20 years old",
         p1: "I started my journey in the world of technology at a very young age, at the age of 15, when I entered high school integrated with information technology at IFRN. I had different experiences and fell in love with programming and solving problems with the help of technology.",
         p2: "Today, having graduated from IFRN with a strong foundation in development, I have continued my journey and am currently pursuing a Bachelor's degree in Information Technology at the Metropolis Digital Institute. I am particularly interested in the fields of software engineering, software architecture, software infrastructure, and areas related to DevOps."
@@ -311,11 +311,11 @@ function translate(language) {
         },
         {
           title: "LabCoMU",
-          text: `In the first week after joining the Bachelor of Information Technology program at IMD/UFRN, I was already participating in a development project as a member of the Laboratory of Mobile and Ubiquitous Computing (LabCoMU). The project was a partnership between IMD and an international company protected by an <a href="https://www.docusign.com/pt-br/blog/significado-de-nda-o-que-e-quem-assina-e-como-fazer" target="_blank" rel="noopener noreferrer">NDA</a>. My task was to create an integrated environment for the company's sales team, a complete system capable of recording all sales proposals, requests, order flow, etc. I participated in the development team as a Fullstack programmer, using Java with the Spring ecosystem and Thymeleaf for the graphical interface. The project started in April 2022 and ended in November of the same year.`
+          text: `In the first week after joining the Bachelor of Information Technology program at IMD/UFRN, I was already participating in a development project as a member of the Laboratory of Mobile and Ubiquitous Computing (LabCoMU). The project was a partnership between IMD and the international company SIEMENS. My task was to create an integrated environment for the company's sales team, a complete system capable of recording all sales proposals, requests, order flow, etc. I participated in the development team as a Fullstack programmer, using Java with the Spring ecosystem and Thymeleaf for the graphical interface. The project started in April 2022 and ended in November of the same year.`
         },
         {
           title: "REGINA Lab",
-          text: `In December 2022, I joined the project that I am still a part of today, as a member of the Research Group on Internet Services and Applications of the Future (REGINA Lab). The IMD/UFRN has a significant partnership with a multinational protected by <a href="https://www.docusign.com/pt-br/blog/significado-de-nda-o-que-e-quem-assina-e-como-fazer" target="_blank" rel="noopener noreferrer">NDA</a>. The project aims at researching and developing solutions within the scope of the 5th generation network, 5G. I work as a Backend developer with Java and Dropwizard, in addition to performing various DevOps tasks with containerization tools such as Docker, Podman, and Kubernetes, virtualization with OpenStack and Open Source MANO, monitoring with Grafana and Prometheus, messaging with RabbitMQ, and various other telecommunications, networking, and development concepts such as KPI, NFV/NFC, etc.`
+          text: `In December 2022, I joined the project that I am still a part of today, as a member of the Research Group on Internet Services and Applications of the Future (REGINA Lab). The IMD/UFRN has a significant partnership with the multinational Lenovo. The project aims at researching and developing solutions within the scope of the 5th generation network, 5G. I work as a Backend developer with Java and Dropwizard, in addition to performing various DevOps tasks with containerization tools such as Docker, Podman, and Kubernetes, virtualization with OpenStack and Open Source MANO, monitoring with Grafana and Prometheus, messaging with RabbitMQ, and various other telecommunications, networking, and development concepts such as KPI, NFV/NFC, etc.`
         }
         ]
       },
