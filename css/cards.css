@@ -31,7 +31,7 @@
   }
   
   .solution_cards_box .solution_card:hover {
-    background: #ffc200;
+    background: #5b2dc4;
     color: #fff;
     transform: scale(1.1);
     z-index: 9;
@@ -61,7 +61,7 @@
   
   .solution_cards_box .solution_card:hover .solu_description button {
     background: #fff !important;
-    color: #ffc200;
+    color: #5b2dc4;
   }
   
   .solution_card .so_top_icon {
@@ -84,9 +84,9 @@
     border-radius: 15px;
     background: linear-gradient(
       140deg,
-      #ffc200 0%,
-      #ffc200 50%,
-      #ffc200c7 75%
+      #5b2dc4 0%,
+      #5b2dc4 50%,
+      #5b2dc4c7 75%
     ) !important;
     color: #fff;
     font-weight: 500;
