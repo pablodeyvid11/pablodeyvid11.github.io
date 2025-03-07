@@ -465,7 +465,7 @@ strong {
 .timeline-info {
   display: inline-block;
   vertical-align: top;
-  max-width: 432px;
+  max-width: -webkit-fill-available !important;
   margin-left: 6em;
 }
 
